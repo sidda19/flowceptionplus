@@ -1,33 +1,88 @@
-# Outputs
+# ============================================================
+# Generated outputs
+# ============================================================
+
 output_folder/
 results/
+results_v2/
+results_v3/
+results_v4/
+trained_results/
 decoded_frames/
+predicted_frames/
+final_frames/
+evaluation_results/
 
-# Dataset (optional)
+# ============================================================
+# Datasets
+# ============================================================
+
 test_set/
+interpolation_training_data/
+interpolation_motion_data/
 
-# Latents
+# ============================================================
+# Model checkpoints / latents
+# ============================================================
+
 *.pt
+*.pth
+*.ckpt
+checkpoints/*
+!checkpoints/README.md
 
-# Optical flow
+# ============================================================
+# Optical flow / masks / NumPy outputs
+# ============================================================
+
 *.npy
 
+# ============================================================
 # Videos
-*.mp4
+# ============================================================
 
+*.mp4
+*.avi
+*.mov
+
+# ============================================================
 # Generated images
+# ============================================================
+
 flow.png
+motion_decomposition.png
 forward_mask.png
 backward_mask.png
-motion_decomposition.png
+occlusion_mask.png
+occlusion_mask_visualization.png
 *_reconstructed.png
 frame_a1.png
-frame_b.png
-vedio_latent_result.png
+frame_b1.png
+sample_frames.png
+vae_reconstructed.png
+video_latent_result.png
+warp_a.png
+warp_b.png
 
+# ============================================================
+# Evaluation results
+# ============================================================
+
+evaluation_*.csv
+
+# ============================================================
 # Python
+# ============================================================
+
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# Models
-models/
+# ============================================================
+# Temporary / debug
+# ============================================================
+
+*.log
+*.tmp
+.S_Store
