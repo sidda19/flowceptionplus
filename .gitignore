@@ -1,54 +1,88 @@
-# Python
-__pycache__/
-*.pyc
+# ============================================================
+# Generated outputs
+# ============================================================
 
-# Model outputs
-*.npy
-*.png
-*.jpg
-*.jpeg
-*.mp4
-*.avi
-*.mov
-*.npz
-
-# Experiment outputs
 output_folder/
-outputs/
-results*/
+results/
+results_v2/
+results_v3/
+results_v4/
 trained_results/
-test_set/
-
-# Model checkpoints
-*.pt
-*.pth
-*.ckpt
-checkpoints/*.pt
-checkpoints/*.pth
-
-# Generated media
-*.mp4
-
-# Generated frames
 decoded_frames/
 predicted_frames/
 final_frames/
+evaluation_results/
 
-# Logs
+# ============================================================
+# Datasets
+# ============================================================
+
+test_set/
+interpolation_training_data/
+interpolation_motion_data/
+
+# ============================================================
+# Model checkpoints / latents
+# ============================================================
+
+*.pt
+*.pth
+*.ckpt
+checkpoints/*
+!checkpoints/README.md
+
+# ============================================================
+# Optical flow / masks / NumPy outputs
+# ============================================================
+
+*.npy
+
+# ============================================================
+# Videos
+# ============================================================
+
+*.mp4
+*.avi
+*.mov
+
+# ============================================================
+# Generated images
+# ============================================================
+
+flow.png
+motion_decomposition.png
+forward_mask.png
+backward_mask.png
+occlusion_mask.png
+occlusion_mask_visualization.png
+*_reconstructed.png
+frame_a1.png
+frame_b1.png
+sample_frames.png
+vae_reconstructed.png
+video_latent_result.png
+warp_a.png
+warp_b.png
+
+# ============================================================
+# Evaluation results
+# ============================================================
+
+evaluation_*.csv
+
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ============================================================
+# Temporary / debug
+# ============================================================
+
 *.log
-
-# Environments
-.venv/
-venv/
-env/
-
-# Jupyter
-.ipynb_checkpoints/
-
-# OS
+*.tmp
 .DS_Store
-.conda/
-
-# IDE
-.vscode/
-.idea/
