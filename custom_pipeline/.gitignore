@@ -1,0 +1,33 @@
+# Outputs
+output_folder/
+results/
+decoded_frames/
+
+# Dataset (optional)
+test_set/
+
+# Latents
+*.pt
+
+# Optical flow
+*.npy
+
+# Videos
+*.mp4
+
+# Generated images
+flow.png
+forward_mask.png
+backward_mask.png
+motion_decomposition.png
+*_reconstructed.png
+frame_a1.png
+frame_b.png
+vedio_latent_result.png
+
+# Python
+__pycache__/
+*.pyc
+
+# Models
+models/
