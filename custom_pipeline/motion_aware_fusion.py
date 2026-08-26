@@ -110,4 +110,4 @@ torch.save(
     args.output,
 )
 
-print("\nSaved :", args.output)git ls-tree HEAD custom_pipeline
+print("\nSaved :", args.output)
