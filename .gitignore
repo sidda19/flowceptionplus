@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+
+# Model outputs
+*.npy
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.avi
+*.mov
+*.npz
+
+# Experiment outputs
+output_folder/
+outputs/
+results*/
+trained_results/
+test_set/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+checkpoints/*.pt
+checkpoints/*.pth
+
+# Generated media
+*.mp4
+
+# Generated frames
+decoded_frames/
+predicted_frames/
+final_frames/
+
+# Logs
+*.log
+
+# Environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+.conda/
+
+# IDE
+.vscode/
+.idea/
